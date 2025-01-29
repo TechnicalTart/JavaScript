@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 1</title>
+  <style>*{font-family:Roboto,Helvetica,Arial,sans-serif;} body{padding:10px;}</style>
+</head>
+
+<body>
+  <h1>IT-2320 - Lab 1: Language Constructs</h1> 
+  <h2 id="student-name"></h2> 
+
+  <p>
+    Output: 
+    <div id="output"></div>
+  </p>
+  <p>
+    Values:<br>
+    <div id="values"></div>
+  </p>  
+  <p>
+    Sum: 
+    <div id="sum"></div>
+  </p>
+
+  <script>
+    /*
+    Amya Dos-Reis
+    IT-2320
+    */
+    
+    let name = "Amya";
+
+    
+    document.getElementById("student-name").innerHTML = "Student Name: " + name;
+
+    
+    document.writeln("Lab 1. Completed by " + name + "<br>");
+
+    console.log("Note: Lab 1. Completed by " + name);
+
+    
+    document.getElementById("output").innerHTML = "innerHTML value set";
+
+    
+    let valuesDiv = document.getElementById("values");
+    for (let i = 1; i <= 10; i++) {
+      valuesDiv.innerHTML += i + "<br>";
+    }
+
+    
+    let sum = 0, num = 1;
+    while (num <= 10) {
+      sum += num;
+      num++;
+    }
+    
+    
+    document.getElementById("sum").innerHTML = sum;
+
+    
+    let a = 5, b = 10, c = 15;
+
+    
+    document.writeln("Sum of a, b, and c: " + (a + b + c) + "<br>");
+
+    
+    if (a < b) {
+      document.writeln("a < b");
+    } else {
+      document.writeln("a > b");
+    }
+
+  </script>
+
+</body>
+</html>
